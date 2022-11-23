@@ -1,0 +1,9 @@
+NAZWA STRONY: besmiolrandke
+EKIPA ZMONTOWANA MMM: Mieszko Winiarski, Marcin Staszel, Marcin Papież
+
+Skrypt będzie używany w poszczególnych modułach:
+-wyszukiwarka na stronie głównej - użytkownik będzie mógł wyszukać daną osobę za pomocą pola wyszukiwarki, która za pomocą skryptu doprowadzi naszego użytkownika do danej osoby.
+-panel logowania i rejestracji - użytkownik może stworzyć swoje konto, które trafia do naszej bazy danych, aby następnym razem móc się już tylko zalogować i korzytstać z naszego serwisu :)
+-filtry wyszukiwania - z menu użytkownik może zawęzić wyszukiwanie do kategorii która go interesuje najbardziej.
+**!OPCJONALNIE! dodawanie swoich zdjęć i opisu - użytkownik będzie mógł zamieścić na stronie swoje zdjęcie i opis za pomocą formularza na stronie, następnie jego zgłoszenie będzie trafiać do weryfikacji i zostanie zamieszczone na stronie. !OPCJONALNIE!**
+Możliwe, iż na stronie zastosujemy skrypt w innych modułach podczas tworzenia projektu.
