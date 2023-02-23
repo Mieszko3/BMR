@@ -1,0 +1,6 @@
+body {
+    text-align: right;
+}
+body > #jsonDane {
+    font-size: 24px;
+}
