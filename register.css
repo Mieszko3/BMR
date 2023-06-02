@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body {
+    text-align: center;
+    padding: 50px;
+    background-image: url("./heja.png");
+    max-width: 1920px;
+    margin: auto;
+}
+body > h1 {
+    margin: 10px;
+    font-size: 50px;
+}
+body > form {
+    display: inline-block;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e09ce0;
+    border: solid 1px red;
+    border-radius: 5px;
+    width: 30vw;
+}
+body > form > div > input {
+    padding: 5px;
+    border: solid 1px red;
+    border-radius: 4px;
+    box-shadow: 5px 5px #cb73cb;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+body > form > div > input:hover {
+    background-color: rgb(224, 212, 211);
+}
+
+body > form > #subReg {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 5px;
+    color: black;
+    background-color: pink;
+    border: solid 1px red;
+}
+body > form > #subReg:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+body > form > div > label {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+body > form > #logLink {
+    font-size: large;
+}
+
+body > form > div > a {
+    text-decoration: none;
+}
+body > form > div > a:hover {
+    color: green;
+}
+
+@media screen and (min-width: 1920px) {
+
+    body > form {
+        background-image: url(blur2.png);
+    }
+
+    body {
+      background-image: url(" ");
+      background-color: #e09ce0;
+    }
+  }

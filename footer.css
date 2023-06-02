@@ -1,0 +1,14 @@
+footer > div {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  footer {
+    border: 2px solid palevioletred;
+    border-radius: 2px;
+    background-image: url(./blur.png);
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 2px 2px 3px #262626;
+  }

@@ -1,0 +1,105 @@
+<?php 
+session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./all.css">
+</head>
+<body>
+<header>
+    <nav id='navbar'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul class="menu">
+          <li><a class='dropdown-arrow' href='#'>Osoby do poznania</a>
+            <ul class='sub-menus'>
+              <li><a href='./all.php'>Wszyscy</a></li>
+              <li><a href='./women.php'>Kobiety</a></li>
+              <li><a href='./men.php'>Mężczyźni</a></li>
+            </ul>
+          </li>
+          <li><a href='./met.php'>Osoby zapoznane dzięki naszej stronie</a></li>
+          <li><a href='./about.php'>Twórcy projektu</a></li>
+
+          <div id="loggedIn">
+          <div>
+            <a href="./main.php">
+              <img src="./logo11.png" alt="logo" id="logo">
+            </a>
+        </div>
+            Zalogowany:<br>
+            <p id = userLog>
+            <?php
+            echo $_SESSION['user'];
+            ?>
+            </p>
+            <a href="logout.php" id="logoutLink">Wyloguj</a>
+            </div>
+          <li><a href="./main.php" id="glowna">Strona główna</a></li>
+          <div id="loggedInMenu">
+          Zalogowany:
+            <p>
+            <?php
+            echo $_SESSION['user'];
+            ?>
+            </p> 
+            <a href="logout.php" id="logoutLink">Wyloguj</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <aside>
+    </aside>
+    <section>
+        <article class="homepage">
+            <div class="tile">
+                <a href="./page2.php">
+                <img src="./page2.png" alt="">
+                </a>
+            <div class="desc">Imię: Honorata<br>Nazwisko: Kamieniołom<br>Wiek: 19 <br> Klasa: 4Ep</div></div>
+            <div class="tile">
+                <a href="./page3.php">
+                <img src="./page3.png" alt="">
+                </a>
+            <div class="desc">Imię: Józefina<br>Nazwisko: Kopytko<br>Wiek: 19<br> Klasa: 4I</div></div>
+            <div class="tile">
+                <a href="./page6.php">
+                <img src="./page6.png" alt="">
+                </a>
+            <div class="desc">Imię: Genowefa<br>Nazwisko: Afewoneg<br>Wiek: 18 <br> Klasa: 3A</div></div>
+            <div class="tile">
+                <a href="./page8.php">
+                <img src="./page8.png" alt="">
+                </a>
+            <div class="desc">Imię: Kalina<br>Nazwisko: Zesłupska<br>Wiek: 17 <br> Klasa: 2E</div></div>
+            <div class="tile">
+                <a href="./page10.php">
+                <img src="./page10.png" alt="">
+                </a>
+            <div class="desc">Imię: Grażyna<br>Nazwisko: Ześląska<br>Wiek: 18 <br> Klasa: 3A</div></div>
+            <div class="tile">
+                <a href="./page12.php">
+                <img src="./page12.png" alt="">
+                </a>
+            <div class="desc">Imię: Monika<br>Nazwisko: Zciągnika<br>Wiek: 19 <br> Klasa: 4A</div></div>
+        </article>
+    </section>
+    <aside></aside>
+    </main>
+    <footer>
+            &copy;
+            <div>
+                Mieszko Winiarski
+            </div>
+            <div>
+                Marcin Papież
+            </div>
+            <div>Marcin Staszel</div>
+        </footer>
+</body>
+</html>

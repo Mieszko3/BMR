@@ -1,0 +1,293 @@
+#loggedInMenu {
+    display: none;
+  }
+  
+  #logo {
+    display: flex;
+    margin-top: 0px;
+    float: right;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #e09ce0;
+    padding: 8px;
+    border: 2px solid palevioletred;
+    border-radius: 2px;
+    background-image: url(./blur.png);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2px;
+  }
+  
+  #navbar {
+    display: block;
+    margin: auto;
+  }
+  
+  .menu {
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    list-style: none;
+  }
+  
+  .menu:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .menu > li {
+    float: left;
+    position: relative;
+  }
+  
+  .menu > li:first-child {
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .menu > li:first-child + li {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+  
+  }
+  
+  .menu > li:first-child + li + li {
+    width: 20%;
+    margin-left: 5px;
+  }
+  
+  .menu > li:first-child + li + li + li {
+    width: 10%;
+    margin-left: 3vw;
+    margin-right: 15px;
+    display: none;
+  }
+  
+  .menu > li:first-child + li + li + li + li {
+    width: 15%;
+    margin-right: 10px;
+    display: none;
+  }
+  
+  #loggedIn {
+    width: 25%;
+    float: right;
+    margin-right: 45px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: white;
+    text-shadow: 1px 1px 1px #000000, 1px 1px 2px #000000;
+    font-weight: bold;
+    background-image: url(./blur2.png);
+    box-shadow:inset 2px 2px 3px 2px #a16793;
+    border: 2px solid palevioletred;
+    border-radius: 2px;
+  }
+  
+  #userLog {
+    color: rgb(128, 216, 147);
+    margin: 0;
+  }
+  
+  #logoutLink {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px #000000, 1px 1px 2px #000000;
+    font-weight: bold;
+  }
+  
+  #logoutLink:hover {
+    color: red;
+  }
+  
+  #glowna {
+    display: none;
+    
+  }
+  
+  .menu > li {
+  width: 100%;
+    float: left;
+    position: relative;
+  }
+  .menu > li > li > li > li > li > a {
+    margin:8px;
+  }
+  
+  .menu > li > a {
+  display: block;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000000, 1px 1px 2px #000000;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-image: url(./blur2.png);
+    box-shadow:inset 2px 2px 3px 2px #a16793;
+    border: 2px solid palevioletred;
+    border-radius: 2px;
+  }
+  
+  .menu > li:hover > a {
+    color: white;
+      text-shadow: 3px 3px 5px #FBF1F1, 3px 3px 16px #000000, 2px 2px 15px #FFFFFF;
+  }
+  
+  .menu a.dropdown-arrow:after {
+  content: "\25BE";
+    float: none;
+  }
+  
+  #navbar input {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer
+  }
+  #navbar label {
+  display: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 35px
+  }
+  #navbar label:before {
+  font-size: 1.6em;
+  content: "\2261"; 
+  margin-left: 20px;
+  }
+  .sub-menus {
+  position: absolute;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-image: url(./blur2.png);
+    list-style-type: none;
+    z-index: 1;
+  }
+  .sub-menus > li {
+    border: 1px solid palevioletred;
+  }
+  
+  .sub-menus > li > a {
+  display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px #000000, 1px 1px 2px #000000;
+  }
+  .menu > li:hover > .sub-menus {
+  display: block
+  }
+  .menu ul.sub-menus a:hover{
+    text-shadow: 3px 3px 5px #FBF1F1, 3px 3px 16px #000000, 2px 2px 15px #FFFFFF
+  }
+  @media screen and (max-width: 1550px){
+  
+    #loggedIn {
+      display: none;
+    }
+    
+    #loggedInMenu {
+      padding: 8px;
+      display: inline-block;
+      margin: 0;
+      font-size: 1.3em;
+      color: white;
+      text-shadow: 1px 1px 1px #000000, 1px 1px 2px #000000;
+      font-weight: bold;
+      background-image: url(./blur2.png);
+      box-shadow:inset 2px 2px 3px 2px #a16793;
+      border: 2px solid palevioletred;
+      border-radius: 2px;
+      width: 50%;
+    }
+    
+    #loggedInMenu > p {
+      display: inline-block;
+      color: rgb(128, 216, 147);
+      margin: 0;
+    }
+    
+    #navbar {
+      position: relative;
+      height: 20px;
+    }
+      #navbar ul {
+      background-image: url(./blur2.png);
+      position:absolute;
+      top:100%;
+      right:0;
+      left:0;      
+      z-index:3;
+      height:auto;
+      display:none;
+      border: 2px solid palevioletred;
+      border-radius: 2px;
+    }
+      .sub-menus {
+      width:100%;
+      position: static;
+    }
+    
+    #navbar > ul > li:hover > ul {
+      display: block;
+      position: relative;
+    }
+    
+      .sub-menus > a {
+      background-image: url(./blur2.png);
+    }
+      #navbar li {
+      display: block;
+      float: none;
+      width: 100%;
+      margin: auto;
+      padding: 3px;
+    }
+    #navbar input, #navbar label {
+      position: fixed;
+      top: 8px;
+      left: 10px;;
+      display:block;
+      margin: auto;
+    }
+    #navbar input {
+      z-index:4;
+    }
+    #navbar input:checked + label {
+      color:white;
+    }
+    #navbar input:checked + label:before {
+      content:"\00d7";
+    }
+    #navbar input:checked ~ ul {
+      display:block;
+    }
+    #logo {
+      display: none;
+    }
+    #glowna {
+      display: block;
+    }
+    }
+    @media screen and (min-width: 1920px) {
+      body {
+        background-image: url(" ");
+        background-color: #e09ce0;
+      }
+    }

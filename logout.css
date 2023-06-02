@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-size: 35px;
+    background-image: url(./blur.png);
+    filter: 50%;
+    margin-top: 40vh;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000, 1px 1px 2px #000000;
+}
+body > div > a {
+    text-decoration: none;
+    color: aqua;
+}
+body > div > a:hover {
+    color: aquamarine;
+}
+
+body > div {
+    display: block;
+    background-image: url(blur2.png);
+    padding: 50px;
+    width: 30%;
+    margin: auto;
+    border: 3px solid palevioletred;
+}
+
