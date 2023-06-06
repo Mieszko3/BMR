@@ -19,7 +19,7 @@ session_start();
     </header>
     <?php 
     $szablon['host'] = 'localhost';
-            $szablon['port'] = 3310;
+            $szablon['port'] = 3306;
             $szablon['user'] = 'root';
             $szablon['pass'] = '';
             $szablon['name'] = 'szablony';

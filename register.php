@@ -38,7 +38,7 @@ if(!isset($_REQUEST['email'])) {
 }
 if(isset($_REQUEST['action']) && $_REQUEST['action'] == "register") {
     //resjestracja
-    $db = new mysqli("localhost", "root", "", "uzytkownicy", "3310");
+    $db = new mysqli("localhost", "root", "", "uzytkownicy", "3306");
     $email = $_REQUEST['email'];
     //sprawdzanie maila
     $email = filter_var($email, FILTER_SANITIZE_EMAIL);

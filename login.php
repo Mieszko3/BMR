@@ -45,7 +45,7 @@ if(isset($_REQUEST['action']) && $_REQUEST['action'] == "login") {
     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
     
     //obiektowo
-    $db = new mysqli("localhost", "root", "", "uzytkownicy", "3310");
+    $db = new mysqli("localhost", "root", "", "uzytkownicy", "3306");
     //prepared statements
     $q = $db->prepare("SELECT * FROM user WHERE email = ? LIMIT 1" );
     //podstawianie wartości
@@ -64,24 +64,6 @@ if(isset($_REQUEST['action']) && $_REQUEST['action'] == "login") {
         //hasło poprawne
             header("Location: ./main.php");
             echo "<script type='text/javascript'>alert('Witamy na naszej stronie! $userAlert');</script>";
-
-//             $szablon['host'] = 'localhost';
-//             $szablon['port'] = 3310;
-//             $szablon['user'] = 'root';
-//             $szablon['pass'] = '';
-//             $szablon['name'] = 'szablony';
-
-//             $conn = new mysqli($szablon['host'], $szablon['user'], $szablon['pass'], $szablon['name'] , $szablon['port']);
-//             if ($conn->connect_error) {
-//                 die($conn->connect_error);
-
-// require_once('./login.php');
-
-// $query = 'SELECT `Imię`, `Nazwisko` FROM szablony WHERE id = 1';
-// $result = $conn->query($query);
-
-//     while($row = $result->fetch_assoc()) {
-//     }
     ?>
 <?php
         } else {
